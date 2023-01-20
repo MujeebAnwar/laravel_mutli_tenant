@@ -33,13 +33,8 @@ Route::get('/home',function(){
 });
 
 Route::get('/',function(){
-    dd('central');
+  return redirect('/login');
 });
-
-Route::get('/test',function(){
-    dd('central');
-})->name('central');
-
 
 
 Route::middleware([
